@@ -1,0 +1,14 @@
+name = "event-schedule-loader"
+main = "index.ts"
+compatibility_date = "2025-04-08"
+
+# スケジュール実行の設定
+# 5分ごとに実行するサンプル設定です。必要に応じて調整してください
+[triggers]
+crons = ["*/5 * * * *"]
+
+# KVストアの接続設定
+[[kv_namespaces]]
+binding = "TOTONARI_KV"
+id = "c7ed48c6de4d425088a68f97c66208bb"
+

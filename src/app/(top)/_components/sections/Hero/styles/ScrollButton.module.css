@@ -1,0 +1,23 @@
+/* ScrollButton.module.css */
+
+.scrollLine {
+  height: 0.5px;
+  width: 100%;
+  background-color: var(--color-secondary);
+  animation: scrollLineAnimation 3.5s infinite ease-out;
+}
+
+@keyframes scrollLineAnimation {
+  0% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}

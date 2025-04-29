@@ -1,0 +1,5 @@
+@reference "../../styles/globals.css";
+
+.page-header-height {
+  @apply h-[60px] md:h-[65px];
+}

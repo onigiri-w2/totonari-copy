@@ -1,0 +1,10 @@
+name = "totonari"
+compatibility_date = "2025-04-08"
+pages_build_output_dir = "out"
+
+[vars]
+NODE_VERSION = "22.14.0"
+
+[[kv_namespaces]]
+binding = "TOTONARI_KV"
+id = "c7ed48c6de4d425088a68f97c66208bb"

@@ -1,0 +1,129 @@
+.container {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+.container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.container h3 {
+  font-size: 1.0625rem; /* 17px / 16px = 1.0625rem */
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container h5 {
+  font-size: 0.9375rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container h6 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Text elements */
+.container p {
+  font-size: 0.9375rem; /* 15px / 16px = 0.9375rem */
+  line-height: 1.5;
+}
+
+/* Lists */
+.container ul,
+.container ol {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+}
+
+.container ul {
+  list-style-type: disc;
+}
+
+.container ol {
+  list-style-type: decimal;
+}
+
+.container li {
+  margin-bottom: 0.25rem;
+}
+
+/* Code */
+.container code {
+  font-family: monospace;
+  font-size: 0.875rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.container pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.container pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Blockquote */
+.container blockquote {
+  border-left: 4px solid rgba(0, 0, 0, 0.1);
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+/* Links */
+.container a {
+  text-decoration: underline;
+}
+
+/* Tables */
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  margin: 1rem 0;
+}
+
+.container th,
+.container td {
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container th {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.05);
+}

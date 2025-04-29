@@ -1,0 +1,13 @@
+@reference "../../../.././../../../../../styles/globals.css";
+
+.poem-max-w {
+  @apply max-w-[500px] md:max-w-[734px] lg:max-w-[1112px];
+}
+
+.poem-body-max-w {
+  @apply max-w-[288px] md:max-w-none;
+}
+
+.poem-conclusion-max-w {
+  @apply max-w-[288px] md:max-w-none;
+}

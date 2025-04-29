@@ -1,0 +1,40 @@
+@reference "../../../../../styles/globals.css";
+
+
+@layer components {
+  .card {
+    @apply aspect-square md:aspect-9/4 lg:aspect-square;
+  }
+
+  .titleFont {
+    @apply text-[16px] md:text-[18px];
+
+    @media (min-width: theme('screens.lg')) {
+      font-size: clamp(0.875rem, 0.431rem + 0.69vw, 1rem);
+    }
+  }
+
+  .descriptionFont {
+    @apply text-[10px] md:text-[13px];
+
+    @media (min-width: theme('screens.lg')) {
+      font-size: clamp(0.625rem, 0.181rem + 0.69vw, 0.75rem);
+    }
+  }
+
+  .labelNoFont {
+    @apply text-[65px] md:text-[80px];
+
+    @media (min-width: theme('screens.lg')) {
+      font-size: clamp(2.813rem, -1.632rem + 6.94vw, 4.063rem);
+    }
+  }
+
+  .labelSubFont {
+    @apply text-[14px] md:text-[17px];
+
+    @media (min-width: theme('screens.lg')) {
+      font-size: clamp(0.75rem, 0.306rem + 0.69vw, 0.875rem);
+    }
+  }
+}

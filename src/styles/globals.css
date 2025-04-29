@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import './themes.css';
+
+html, body {
+  font-family: var(--font-sans-jp);
+  font-size: 16px;
+}
+
+
+/* layout styles */
+.site-container {
+  @apply px-[30px] md:px-[50px] lg:px-[65px];
+}
+
+.core-container {
+  @apply mx-[30px] md:mx-[50px] max-w-[500px] md:max-w-[734px] lg:max-w-[1112px];
+
+  @media (min-width: var(--breakpoint-lg)) {
+    margin-left: calc(100px + (100vw - var(--breakpoint-lg)) / 4.5);
+    margin-right: calc(100px + (100vw - var(--breakpoint-lg)) / 4.5);
+  }
+}
+

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* breakpoints */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+
+  /* aspect ratios */
+   --aspect-silver: 1.414 / 1;
+
+  /* colors */
+  --color-primary: #004351;
+  --color-secondary: #FFF5E3;
+  --color-accent: #FFC3AA;
+  --color-black: #333;
+  --color-gray: #666;
+  --color-light-gray: #AAAAAA;
+  --color-lightest-gray: #E0E0E0;
+  --color-calendar-head: #F7F7F7;
+
+  /* line height */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 1.75;
+  --leading-looser: 2;
+
+
+  /* letter spacing */
+  --tracking-40: 0.04em;
+  --tracking-100: 0.1em;
+  --tracking-160: 0.16em;
+  --tracking-200: 0.2em;
+
+  /* font font-family */
+  --font-sans-jp: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  --font-cabin: "Cabin", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+}
+

@@ -1,0 +1,66 @@
+@reference "../../../../../../styles/globals.css";
+
+.carouselContainer {
+  width: max-content;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* 共通のスタイルをまとめる */
+.primaryTrack,
+.secondaryTrack {
+  padding-left: 28px;
+  gap: 28px;
+  display: flex;
+  width: max-content;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.primaryTrack {
+  animation-name: loopAndReset;
+}
+
+.secondaryTrack {
+  animation-name: continuousLoop;
+}
+
+/* レスポンシブスタイルを整理 */
+.carouselItem {
+  height: 204px;
+  flex-shrink: 0;
+}
+
+@media (min-width: theme("screens.md")) {
+  .carouselItem {
+    height: 236px;
+  }
+}
+
+@media (min-width: theme("screens.lg")) {
+  .carouselItem {
+    height: 310px;
+  }
+}
+
+/* アニメーションキーフレーム */
+@keyframes loopAndReset {
+  50% {
+    transform: translateX(-100%);
+  }
+  50.01% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes continuousLoop {
+  100% {
+    transform: translateX(-200%);
+  }
+}

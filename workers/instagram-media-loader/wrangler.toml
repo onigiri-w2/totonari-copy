@@ -1,0 +1,14 @@
+name = "instagram-media-loader"
+main = "index.ts"
+compatibility_date = "2025-04-08"
+
+# スケジュール実行の設定
+# 日本時間の毎日0時（UTC 15:00）と正午12時（UTC 3:00）に実行
+[triggers]
+crons = ["0 15 * * *", "0 3 * * *"]
+
+# KVストアの接続設定
+[[kv_namespaces]]
+binding = "TOTONARI_KV"
+id = "c7ed48c6de4d425088a68f97c66208bb"
+

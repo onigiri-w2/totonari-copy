@@ -1,0 +1,9 @@
+name = "instagram-access-token-refresh"
+main = "index.ts"
+compatibility_date = "2025-04-08"
+
+# スケジュール実行の設定
+# 日本時間の毎日0時（UTC 15:00）に実行
+[triggers]
+crons = ["0 15 * * *"]
+

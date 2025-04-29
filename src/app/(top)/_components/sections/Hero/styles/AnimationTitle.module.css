@@ -1,0 +1,40 @@
+@reference "../../../../../../styles/globals.css";
+
+
+.animationTitle {
+  display: block;
+}
+
+.firstLine,
+.secondLine {
+  display: block;
+}
+
+@media (min-width: theme('screens.lg')) { 
+  .firstLine,
+  .secondLine {
+    display: inline;
+  }
+  
+  .firstLine::after {
+    content: ' ';
+  }
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
