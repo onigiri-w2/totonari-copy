@@ -37,8 +37,6 @@ totonari-copy/
 
 ```mermaid
 graph TD
-    User[ユーザー] --> CF_Pages[Cloudflare Pages]
-    User --> CF_Workers[Cloudflare Workers]
     CF_Pages --> Browser[ブラウザ]
     CF_Workers --> Browser
     CF_Workers --> Instagram[Instagram API]
